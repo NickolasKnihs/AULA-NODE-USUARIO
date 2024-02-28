@@ -20,6 +20,7 @@ meuServidor.get('/minhaAulaDeNode', (requisicao, resposta) => {
 // Instalar thunder Client
 meuServidor.post('/cadastraMinhaAulaDeNode', (requisicao, resposta) =>{
     console.log(requisicao.body);
+    usuarios.push(requisicao.body.nome);
     resposta.send();
 });
 
